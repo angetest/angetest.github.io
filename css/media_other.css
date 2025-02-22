@@ -1,0 +1,29 @@
+@media screen and (max-width: 1700px) {
+
+    #foot-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    p {
+        font-size: 19px;
+    }
+
+    h2 {
+        font-size: 58px;
+    }
+
+    h3 {
+        font-size: 40px;
+    }
+
+    #text {
+        margin-left: 8%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    header {
+        justify-content: space-between;
+    }
+}
