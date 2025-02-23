@@ -43,6 +43,16 @@ body {
     color: #ffffff;
 }
 
+footer {
+    height: 85vh;
+    width: 100%;
+    background-color: #24242a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 article {
     display: flex;
     align-items: center;
@@ -226,10 +236,12 @@ article p {
   font-size: 30px;
   margin: 0 0 0 90px;
 }
+
 .contact-text {
   padding-left: 15px;
   display: inline-block;
 }
+
 .contact-text h4 {
   color: #fff;
   font-size: 20px;
@@ -237,6 +249,7 @@ article p {
   margin-bottom: 2px;
   margin-top: 0;
 }
+
 .contact-text span {
   color: #757575;
   font-size: 15px;
@@ -329,6 +342,10 @@ article p {
 
 #gradiant {
     position: absolute;
+    width: 630px;
+    height: 360px;
+    margin-left: 85px;
+    margin-top: 23px;
     background: linear-gradient(45deg, rgba(213, 72, 87, 0.3) 20%, rgba(46, 174, 255, 0.3) 100%);
     pointer-events: none;
 }
@@ -395,107 +412,99 @@ article p {
     }
 }
 
-/* ------------------ */
-
-main {
-    margin-top: 200px;
-}
-
-footer {
-    height: 85vh;
-    width: 100%;
-    background-color: #24242a;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-img {
-    width: 83%;
-    margin-top: 120px;
-}
-
-p {
-    max-width: 90%;
-    font-size: 19px;
-}
-
-h1 {
-    text-align: center;
-}
-
-h3 {
-    font-size: 29px;
-    margin: 0 0 44px 0;
-    color: rgba(255, 255, 255, 0.85);
-}
-
-.atop {
-    font-size: 19px;
-    color: rgba(255, 255, 255, 0.5);
-}
-
-.animation {
-    opacity: 0;
-    transform: translateX(-15px);
-    animation: reveal 0.6s 0.6s ease-out forwards;
-}
-
-.content {
-    margin-bottom: 80px;
-}
-
-#anim {
-    opacity: 0;
-    transform: translateY(15px);
-    animation: reveal 0.6s 0.6s ease-out forwards;
-}
-
-#gradiant {
-    height: 800px;
-    width: 1600px;
-    margin: 120px 0 0 0;
-}
-
-#present {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#present p {
-    max-width: 60%;
-    text-align: center;
-}
-
-#text {
-    margin-top: 100px;
-    margin-left: 12%;
-}
-
-
 @media screen and (max-width: 1700px) {
+    #title h1 {
+        font-size: 33px;
+    }
+
+    #title p {
+        font-size: 17px;
+    }
+
+    #the_button {
+        font-size: 1rem;
+        height: 3rem;
+        line-height: 3rem;
+        padding: 5px 70px 5px 20px;
+    }
+
     #foot-text {
         width: 100%;
         text-align: center;
     }
 
-    p {
-        font-size: 19px;
-        margin-bottom: 70px;
+    #pc {
+        width: 600px;
     }
 
-    h2 {
-        font-size: 58px;
+    #photo {
+        width: 472px;
+        margin-left: 64px;
+        margin-top: 18px;
     }
 
-    h3 {
-        font-size: 40px;
+    #gradiant {
+        width: 472px;
+        height: 269.703px;
+        margin-left: 64px;
+        margin-top: 18px;
     }
 
-    #text {
-        margin-left: 8%;
+    #soluce {
+        width: 600px;
+    }
+
+    article div {
+        padding: 0 60px 0 60px;
+    }
+
+    article p {
+        font-size: 18px;
+    }
+
+    .image_left {
+        width: 480px;
+        height: 480px;
+    }
+
+    .image_right {
+        width: 480px;
+        height: 480px;
+    }
+
+    .gradiant_left {
+        width: 480px;
+        height: 480px;
+    }
+
+    .gradiant_right {
+        width: 480px;
+        height: 480px;
+    }
+
+    #first_frame {
+        height: 550px;
+    }
+
+    #second_frame {
+        height: 600px;
+    }
+
+    #third_frame {
+        height: 550px;
+    }
+
+    #rate_div p {
+        max-width: 85%;
+        font-size: 22px;
+    }
+
+    .progress-bar {
+        width: 80%;
+    }
+
+    .rating {
+        margin: 50px 0 50px 160px;
     }
 }
 
@@ -513,7 +522,82 @@ h3 {
     header p {
         font-size: 31px;
     }
-    
+
+    #presentation {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        min-height: 1400px;
+    }
+
+    #title {
+        margin-top: 20%;
+        margin-left: 10%;
+    }
+
+    #title h1 {
+        font-size: 60px;
+    }
+
+    #title p {
+        font-size: 40px;
+    }
+
+    .rating {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .the_article {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #a_article {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #first_frame {
+        height: 955px;
+    }
+
+    #second_frame {
+        height: 975px;
+    }
+
+    #third_frame {
+        height: 925px;
+    }
+
+    .progress-bar {
+        height: 35px;
+        width: 90%;
+    }
+
+    .progress {
+        height: 35px;
+        font-size: 28px;
+        padding-top: 7px;
+    }
+
+    .skill span {
+        height: 40px;
+        font-size: 33px;
+    }
+
+    .rating {
+        margin-left: 130px;
+    }
+
+    .rate h2 {
+        font-size: 50px;
+    }
+
+    #rate_div p {
+        font-size: 27px;
+    }
+
     #foot {
         display: flex;
         justify-content: center;
@@ -542,5 +626,9 @@ h3 {
     header a, header h1 {
         width: 30%;
         margin: 0;
+    }
+
+    .buttons {
+        margin-bottom: 45px;
     }
 }
